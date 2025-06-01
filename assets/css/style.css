@@ -1,0 +1,598 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #F0A202;
+    color: white !important;
+}
+
+
+body {
+    background-color: #fffaef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: "Red Hat Display", "Monserrat", "Poppins"; */
+}
+
+#HeaderSection {
+    height: 150px;
+    background: transparent;
+}
+
+.menu-content {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+.menu-list a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px !important;
+}
+.menu-list a:hover, a:active {
+    color: #F0A202;
+    text-decoration: none;
+    transition: 0.4s all;
+}
+.active a {
+    color: #F0A202 !important;
+}
+
+.action-btn {
+    background-color: #000;
+    padding: 13px 25px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.action-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.action-btn img {
+    margin-bottom: -7px;
+    color: white;
+}
+
+.action-btn:hover {
+    background-color: #F0A202;
+    border: 2px solid #d7950f;
+    transition: 0.4s ease-in-out all;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.action-btn:hover {
+    text-decoration: none;
+}
+
+
+
+#HeroSection {
+    background-color: transparent;
+    margin-top: -150px;
+    height: 700px;
+}
+
+.hero-bg-overly {
+    /* background-image: ; */
+    background-image: linear-gradient(0deg, #DE873126 10%, #FFFFFF94 100%)
+    , url(../images/hero-bg.png);
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.hero-content {
+    display: flex;
+    padding: 150px 0 100px 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10%;
+    gap: 40px;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    color: #717171;
+    line-height: 25px;
+}
+
+.hero-content .action-btn {
+    padding: 15px 40px;
+}
+.hero-text-section {
+  width: 60%;
+}
+.hero-img-section {
+  width: 40%;
+}
+
+
+.hero-img-section img {
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 12px 12px 15px -2px rgba(0,0,0,0.3);
+}
+
+.hero-img-section img:hover {
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 12px 12px 15px -2px rgba(0,0,0,0.4);
+    margin-top: -20px;
+    margin-bottom: 20px;
+    transition: 0.4s ease-in-out all;
+}
+
+#SkillsSection {
+    height: 300px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.skills-slide-content {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  padding: 10px 0;
+  
+}
+
+.skills-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.skills-slide-content h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #00000033;
+    /* text-align: center; */
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.skills-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #00000033;
+}
+
+.skills-slide {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.skills-slide-text {
+  white-space: nowrap;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 0 1rem;
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  margin: 0 1rem;
+  align-self: center;
+}
+
+#AboutSection {
+    height: 550px;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 50px 0;
+    gap: 50px;
+}
+
+.about-img-section img {
+    border-radius: 20px;
+}
+
+.about-text-section p {
+    font-size: 19px;
+    color: #717171;
+    line-height: 25px;
+}
+
+.about-text-section .action-btn {
+    padding: 15px 40px;
+}
+
+
+
+/* ===== Projects Page Css ===== */
+#ProjectsSection {
+  padding: 100px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#ProjectsSection h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: #717171;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.5);
+}
+
+.project-card h2 {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.project-card .action-btn {
+  display: block;       /* Make the button behave like a block element */
+  width: 100%;          /* Full width of the card */
+  text-align: center;   /* Center the text inside the button */
+  border-radius: 50px;
+  box-sizing: border-box; /* Ensure padding doesn’t break width */
+}
+
+
+.project-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-summary-table caption {
+  caption-side: top;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-summary-table th,
+.project-summary-table td {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.project-summary-table thead {
+  background-color: #F0A202; /* mustard yellow */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-summary-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.project-summary-table tbody tr:nth-of-type(even) {
+  background-color: #fffaef; /* soft cream */
+}
+
+.project-summary-table tbody tr:hover {
+  background-color: #fff1d6; /* soft highlight */
+  transition: background-color 0.3s ease;
+}
+
+/* Conact page css */
+
+
+#ContactSection {
+  text-align: center;
+  padding: 100px 10%;
+}
+
+#ContactSection h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.section-description {
+  text-align: center;
+}
+
+.contact-form {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #F0A202;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #F0A202 ;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #F0A202 ;
+}
+
+
+#ContactSection div {
+  height: 300px;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 0px;
+    background-color: #f4e2be;
+
+    float: none;
+    clear: both;
+}
+
+.logo-text {
+  fill: #F0A202;
+  font-size: 40px;
+  filter: drop-shadow(6px 6px 2px rgba(0, 0, 0, 0.3));
+}
+
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.reverse .reverse-track {
+  animation: scroll-reverse 25s linear infinite;
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media print {
+
+  nav, footer {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt; 
+    color: black; 
+    background: white;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #HeaderSection {
+    height: auto;
+  }
+  #HeroSection {
+    height: auto;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5%;
+    padding-top: 100px;
+    gap: 30px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .hero-img-section img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  #AboutSection {
+    height: auto;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-img-section img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-text-section {
+    padding: 0 5%;
+  }
+
+  .skills-title,
+  .skills-slide-content h4 {
+    font-size: 28px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #SkillsSection {
+    height: auto;
+    margin-bottom: 60px;
+    padding: 40px 5%;
+  }
+
+  #ProjectsSection {
+    padding: 60px 5%;
+  }
+
+  #ProjectsSection h2 {
+    font-size: 32px;
+  }
+
+  .section-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #ContactSection {
+    padding: 60px 5%;
+  }
+
+  .contact-container {
+    padding: 0 10px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  footer {
+    font-size: 18px;
+    padding: 15px 5px;
+  }
+
+  .menu-content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  .action-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

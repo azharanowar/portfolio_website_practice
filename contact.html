@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Azhar Anowar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header id="HeaderSection">
+        <nav>
+            <div class="menu-content">
+                <div>
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Azhar Anowar Logo" width="250"></a>
+                </div>
+                <div>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="index.html#AboutSection">About</a></li>
+                        <li class="menu-item"><a href="projects.html">Projects</a></li>
+                        <li class="menu-item active"><a href="contact.html">Contact</a></li>
+                        <li class="menu-item"><a href="https://github.com/azharanowar" target="_blank"
+                                rel="noopener">Learn More.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="mailto:azharanowar@gmail.com">
+                        <button class="action-btn">
+                            Get A Quote <img src="assets/images/arrow-white.svg" alt="Button Arrow Image" />
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h2 class="contact-title">Contact Me</h2>
+        <p class="section-description">
+            I'd love to hear from you! Feel free to reach out via the form below.
+        </p>
+        <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <section id="ContactSection">
+      <div>
+        <h2>Contact Me</h2>
+        <p class="section-description">
+          Interested in working together, collaborating on projects, or just saying hi? Feel free to reach out!
+        </p>
+      </div>
+      <div>
+        <a href="mailto:azharanowar@gmail.com">
+          <button class="action-btn">Say Hello <img src="assets/images/arrow-white.svg" alt="Arrow Icon" /></button>
+        </a>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+        <p><a href="mailto:azharanowar@gmail.com">Azhar Anowar</a> || Copyright © 2025 – All rights reserved.</p>
+
+        <svg id="logo" width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Azhar Anowar logo">
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="logo-text">
+                Azhar Anowar
+            </text>
+        </svg>
+    </footer>
+
+</body>
+
+</html>
